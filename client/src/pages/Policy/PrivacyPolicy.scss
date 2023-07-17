@@ -1,0 +1,23 @@
+.privacy {
+  width: 100%;
+  height: auto;
+  max-width: 1400px;
+  padding: 50px 100px 100px 100px;
+  h1 {
+    font-size: 3.5rem;
+  }
+  section {
+    width: 100%;
+    padding: 20px 50px;
+    h2 {
+      color: #2b569f;
+    }
+    .item {
+      width: 100%;
+      padding: 0px 50px;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

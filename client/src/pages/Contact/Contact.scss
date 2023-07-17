@@ -1,0 +1,63 @@
+.contact {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  padding: 60px 0px;
+  max-width: 1400px;
+  .contact_info {
+    padding: 60px;
+    width: 100%;
+    height: auto;
+    .con_data {
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      padding-bottom: 20px;
+    }
+    .contact_info {
+      padding: 10px 30px;
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+  .contact_form {
+    padding: 60px;
+    width: 100%;
+    height: auto;
+    background-color: #f8f7fa;
+    input {
+      margin: 10px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 30px;
+      border: 1px solid #f0efef;
+    }
+    .form_in {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+    textarea {
+      font-family: Helvetica, sans-serif;
+      margin: 10px;
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid #f0efef;
+    }
+    button {
+      background-color: #59c9e8;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 30px;
+      color: white;
+    }
+  }
+}

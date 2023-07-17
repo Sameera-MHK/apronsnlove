@@ -1,0 +1,13 @@
+.slider {
+  height: auto;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  .video {
+    height: 65vh;
+    width: 100%;
+    overflow: hidden;
+    background-position: bottom;
+  }
+}
