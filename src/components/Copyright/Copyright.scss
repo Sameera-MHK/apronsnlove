@@ -1,0 +1,22 @@
+.copyright {
+  max-width: 1400px;
+  width: 100%;
+  height: auto;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #1f1f1f;
+
+  .copyright_info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: 10px;
+      color: rgb(219, 219, 219);
+    }
+  }
+}
