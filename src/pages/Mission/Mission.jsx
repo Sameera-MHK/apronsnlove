@@ -42,7 +42,7 @@ const Mission = () => {
       </div>
 
       <div className="time_line">
-        <h1>Over 20 years and conting....</h1>
+        <h1>Over 20 years and continuing....</h1>
         <div className="time_line_info">
           <div className="years">
             <h1>1992</h1>
