@@ -5,7 +5,7 @@ import NutImg from "../../img/Nut_hero.jpg";
 
 const Nut_Butters = () => {
   return (
-    <div className="my_container">
+    <div className="max-width">
       <div className="nut_Butter">
         <div
           className="nut_hero"
@@ -41,10 +41,10 @@ const Nut_Butters = () => {
             backgroundColor: "#006f62",
           }}
         >
-          <div className="pro_img">
+          <div className="pro_img item_one">
             <img src={require("../../img/pistachio.png")} alt="" />
           </div>
-          <div className="pro_text">
+          <div className="pro_text item_two">
             <h1>Pistachio Butter</h1>
             <strong>PRODUCT WITH A PERSONAL TOUCH FOR ANY OCCASION</strong>
             <p>
@@ -67,7 +67,7 @@ const Nut_Butters = () => {
             backgroundColor: "#772585",
           }}
         >
-          <div className="pro_text">
+          <div className="pro_text item_three">
             <h1>Peanut Butter</h1>
             <strong>PRODUCT WITH A PERSONAL TOUCH FOR ANY OCCASION</strong>
             <p>
@@ -82,7 +82,7 @@ const Nut_Butters = () => {
               <button>Shop Now</button>
             </div>
           </div>
-          <div className="pro_img">
+          <div className="pro_img item_four">
             <img src={require("../../img/peanuts.png")} alt="" />
           </div>
         </div>
@@ -93,10 +93,10 @@ const Nut_Butters = () => {
             backgroundColor: "#Fc4c02",
           }}
         >
-          <div className="pro_img">
+          <div className="pro_img item_five">
             <img src={require("../../img/Hazzaldnut.png")} alt="" />
           </div>
-          <div className="pro_text">
+          <div className="pro_text item_six ">
             <h1>Hazelnut Butter</h1>
             <strong>PRODUCT WITH A PERSONAL TOUCH FOR ANY OCCASION</strong>
             <p>
@@ -119,7 +119,7 @@ const Nut_Butters = () => {
             backgroundColor: "#66435a",
           }}
         >
-          <div className="pro_text">
+          <div className="pro_text item_seven">
             <h1>Almond Butter </h1>
             <strong>PRODUCT WITH A PERSONAL TOUCH FOR ANY OCCASION</strong>
             <p>
@@ -134,7 +134,7 @@ const Nut_Butters = () => {
               <button>Shop Now</button>
             </div>
           </div>
-          <div className="pro_img">
+          <div className="pro_img itme_eight">
             <img src={require("../../img/almond.png")} alt="" />
           </div>
         </div>
@@ -145,10 +145,10 @@ const Nut_Butters = () => {
             backgroundColor: "#da1884",
           }}
         >
-          <div className="pro_img">
+          <div className="pro_img item_nine">
             <img src={require("../../img/peanuts-2.png")} alt="" />
           </div>
-          <div className="pro_text">
+          <div className="pro_text item_ten">
             <h1>Peanut Butter</h1>
             <strong>PRODUCT WITH A PERSONAL TOUCH FOR ANY OCCASION</strong>
             <p>

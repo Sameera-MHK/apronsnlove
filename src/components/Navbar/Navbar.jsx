@@ -12,7 +12,77 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="navbar">
+    <div className="my-navbar">
+      <nav class="navbar navbar-expand-lg bg-body-none">
+        <div class="container-fluid">
+          <div className="m-wrap">
+            <div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+            <div className="m-logo">
+              <Link to="/">
+                <img src={require("../../img/logo.png")} alt="" />
+              </Link>
+            </div>
+
+            <div className="icons">
+              <div className="cartIcon" onClick={() => setOpen(!open)}>
+                <ShoppingCartIcon />
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li className="nav-item">
+                <Link className="link" to="/products/6">
+                  Shop
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="link" to="/almond-flour">
+                  Almond Flour
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="link" to="/coconut-sugar">
+                  Coconut Sugar
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="link" to="/nut-butter">
+                  Chocolate Chips
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="link" to="/chocolate-chips">
+                  Nut Butter
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="link" to="/contact">
+                  Conatct
+                </Link>
+              </li>
+            </ul>
+            {open && <Cart />}
+          </div>
+        </div>
+      </nav>
+
       <div className="wrapper">
         <div className="left">
           <div className="item">
@@ -50,6 +120,7 @@ const Navbar = () => {
               Nut Butter
             </Link>
           </div>
+
           <div className="item">
             <Link className="link" to="/chocolate-chips">
               Chocolate Chips
@@ -57,7 +128,7 @@ const Navbar = () => {
           </div>
           <div className="item">
             <Link className="link" to="/contact">
-              Contact
+              Conatct
             </Link>
           </div>
 

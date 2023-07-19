@@ -4,7 +4,8 @@ import Newsletter from "../../components/Newsletter/Newsletter";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="max-width">
+      <div className="about">
       <div className="about_banner">
         <img src={require("../../img/profile_pic.jpg")} alt="" />
       </div>
@@ -181,6 +182,7 @@ const About = () => {
         </div>
       </div>
       <Newsletter/>
+    </div>
     </div>
   );
 };

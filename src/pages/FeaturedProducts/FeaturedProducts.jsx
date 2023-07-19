@@ -8,7 +8,8 @@ const FeaturedProducts = ({ type }) => {
   );
 
   return (
-    <div className="featuredProducts">
+    <div className="max-width">
+      <div className="featuredProducts">
       <div className="heading">
         <h1>So much good stuff.</h1>
       </div>
@@ -19,6 +20,7 @@ const FeaturedProducts = ({ type }) => {
           ? "loading"
           : data?.map((item) => <Card item={item} key={item.id} />)}
       </div>
+    </div>
     </div>
   );
 };

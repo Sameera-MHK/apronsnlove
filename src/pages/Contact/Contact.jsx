@@ -6,9 +6,9 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Contact = () => {
   return (
-    <div className="my_container">
+    <div className="max-width">
       <div className="contact">
-        <div className="contact_info">
+        <div className="contact_info_wrap">
           <div className="con_data">
             <h1>Let’s contact</h1>
             <p>

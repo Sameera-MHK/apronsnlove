@@ -7,7 +7,6 @@ const Slider = () => {
     <div className="slider">
       <div className="video">
         <video className="videoTag" autoPlay loop muted>
-          
           <source src={sample} type="video/mp4" />
         </video>
       </div>

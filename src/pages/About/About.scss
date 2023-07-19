@@ -1,13 +1,18 @@
 .about {
   width: 100%;
   height: auto;
-  max-width: 1400px;
 
   .about_banner {
     width: 100%;
     overflow: hidden;
     height: 60vh;
     img {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .about_banner {
+      height: auto;
       width: 100%;
     }
   }
@@ -27,6 +32,12 @@
         padding-bottom: 20px;
       }
     }
+    @media screen and (max-width: 992px) {
+      .pro_head {
+        padding: 30px;
+      }
+    }
+
     .pillars {
       width: 100%;
       height: auto;
@@ -60,7 +71,20 @@
           padding: 30px;
         }
       }
+      @media screen and (max-width: 992px) {
+        .pils_wrap {
+          grid-template-columns: 1fr;
+          width: 100%;
+          padding: 30px !important;
+        }
+      }
       p {
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .pillars {
+        padding: 30px;
         text-align: center;
       }
     }
@@ -109,6 +133,19 @@
         }
       }
     }
+    @media screen and (max-width: 992px) {
+      .lead_sec {
+        grid-template-columns: 1fr;
+        width: 100%;
+        grid-gap: 2rem;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .leader_ship {
+      padding: 50px;
+      text-align: center;
+    }
   }
   .values {
     padding: 100px;
@@ -140,6 +177,20 @@
         h2 {
           padding-bottom: 30px;
         }
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .all_items {
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .values {
+      padding: 30px;
+      .all_items {
+        grid-gap: 5px;
       }
     }
   }

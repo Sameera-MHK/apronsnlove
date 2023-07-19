@@ -1,9 +1,9 @@
 import React from "react";
-import Slider from "../../components/Slider/Slider";
 import FeaturedProducts from "../FeaturedProducts/FeaturedProducts";
 import Categories from "../../components/Categories/Categories";
 import Contact from "../../components/Contact/Contact_out";
 import "./Home.scss";
+import sample from "../../img/hero.mp4";
 import backImg from "../../img/mission-img.jpg";
 import { Link } from "react-router-dom";
 import Newsletter from "../../components/Newsletter/Newsletter";
@@ -13,11 +13,18 @@ const Home = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <div className="home">
-      <Slider />
-      <FeaturedProducts type="featured" />
+    <div className="max-width">
+      <div className="home">
+        <div className="hero_wrappe">
+          <div className="video">
+            <video className="videoTag" autoPlay loop muted>
+              <source src={sample} type="video/mp4" />
+            </video>
+          </div>
+        </div>
 
-      <div className="max-width">
+        <FeaturedProducts type="featured" />
+
         <div className="product_info_section_one">
           <div className="text">
             <h1 style={{ color: "#003087" }}>Almond flour</h1>
@@ -39,12 +46,12 @@ const Home = () => {
               </button>
             </div>
           </div>
+
           <div className="img">
             <img src={require("../../img/pro_info_img.jpg")} />
           </div>
         </div>
-      </div>
-      <div className="max-width">
+
         <div
           className="home_mission"
           style={{
@@ -64,9 +71,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </div>
 
-      <div className="max-width">
         <div className="product_info_section_one">
           <div className="img">
             <img src={require("../../img/chips_box.jpg")} />
@@ -92,15 +97,18 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="testimonial">
-        <h1>What out customer say about us</h1>
-        <div className="test_in">
-          <img src={require("../../img/testimo.jpg")} alt="" />
-        </div>
-      </div>
 
-      <Newsletter />
+        <div className="testimonial">
+          <h1>What out customer say about us</h1>
+          <div className="test_in">
+            <img src={require("../../img/t-1.png")} alt="" />
+            <img src={require("../../img/t-2.png")} alt="" />
+            <img src={require("../../img/t-3.png")} alt="" />
+          </div>
+        </div>
+
+        <Newsletter />
+      </div>
     </div>
   );
 };

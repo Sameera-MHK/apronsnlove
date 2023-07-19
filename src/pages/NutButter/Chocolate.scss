@@ -1,6 +1,6 @@
-.nut_Butter {
+.choco_Butter {
   width: 100%;
-  .nut_hero {
+  .choco_hero {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,28 +8,28 @@
       width: 100%;
       height: 100%;
     }
-    .nut_text {
+    .choco_text {
       padding: 100px;
-      background-color: rgba(255, 255, 255, 0.311);
+      background-color: rgba(0, 0, 0, 0.632);
 
       h1 {
-        color: rgb(0, 0, 0) !important;
+        color: white !important;
         padding-bottom: 10px;
       }
       strong {
-        color: rgb(0, 0, 0) !important;
+        color: white !important;
         padding-bottom: 10px;
       }
       p {
-        color: rgb(0, 0, 0) !important;
+        color: white !important;
       }
     }
   }
   @media only screen and (max-width: 992px) {
-    .nut_hero {
+    .choco_hero {
       grid-template-columns: 1fr;
       text-align: center;
-      .nut_text {
+      .choco_text {
         padding: 50px !important;
         text-align: center;
         strong {
@@ -44,7 +44,6 @@
     grid-template-columns: 1fr 1fr;
     .pro_img {
       width: 100%;
-
       img {
         width: 100%;
         padding: 50px;
@@ -69,7 +68,7 @@
         color: white !important;
       }
     }
-    .Nut_shop {
+    .choco_shop {
       padding: 20px 0px;
       button {
         color: white;
@@ -87,13 +86,9 @@
     }
     .pro_text {
       text-align: center;
-      padding: 10px 50px !important;
       strong {
         margin-bottom: 10px;
       }
-    }
-    .pro_img {
-      padding: 0px 30px !important;
     }
     .item_one {
       order: 0;

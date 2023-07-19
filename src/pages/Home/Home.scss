@@ -5,11 +5,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .hero_wrappe {
+    width: 100%;
+    height: auto;
+    height: 60vh;
+    min-height: auto;
+    overflow: hidden;
+    video {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .hero_wrappe {
+      height: auto;
+    }
+  }
+
   .product_info_section_one {
+    padding: 50px 80px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 60px 100px;
     grid-gap: 2rem;
     .text {
       width: 100%;
@@ -44,16 +62,11 @@
       }
     }
   }
-  @media screen and (max-width: 1000px) {
-    .product_info_section_one {
-      grid-template-columns: 1fr;
-    }
-  }
+
   .home_mission {
     width: 100%;
     height: auto;
     display: flex;
-    background-color: rgb(0, 0, 0);
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -77,14 +90,20 @@
       }
     }
   }
+  @media only screen and (max-width: 992px) {
+    .home_mission {
+      padding: 50px 20px !important;
+    }
+  }
   .testimonial {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    max-width: 1400px;
     overflow: hidden;
+    text-align: center;
+    padding: 50px;
     padding-bottom: 100px;
     h1 {
       font-size: 3.5rem;
@@ -93,6 +112,54 @@
     }
     .test_in {
       width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 2rem;
+      img {
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      .test_in {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .testimonial {
+      padding: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .home {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    .product_info_section_one {
+      grid-template-columns: 1fr;
+      padding: 0 !important;
+      .text {
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        padding: 50px 50px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .home_mission {
+      width: 100%;
+      object-fit: contain;
       img {
         width: 100%;
       }

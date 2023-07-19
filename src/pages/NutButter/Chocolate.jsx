@@ -1,14 +1,14 @@
 import React from "react";
 import Newsletter from "../../components/Newsletter/Newsletter";
-import "./Nut_Butters.scss";
+import "./Chocolate.scss";
 import ChocoImg from "../../img/Chocolate_hero.png";
 
 const Chocolate = () => {
   return (
-    <div className="my_container">
-      <div className="nut_Butter">
+    <div className="max-width">
+      <div className="choco_Butter">
         <div
-          className="nut_hero"
+          className="choco_hero"
           style={{
             backgroundImage: `url(${ChocoImg})`,
             backgroundSize: "cover",
@@ -32,24 +32,25 @@ const Chocolate = () => {
               malesuada.
             </p>
           </div>
-          <div className="nut_no_text"></div>
+          <div className="choco_no_text"></div>
         </div>
 
         <div
-          className="pro_section"
+          className="pro_section "
           style={{
             backgroundColor: "#00a499",
           }}
         >
           <div
-            className="pro_img"
+            className="pro_img item_one"
             style={{
               backgroundColor: "white",
             }}
           >
             <img src={require("../../img/milk_choco.png")} alt="" />
           </div>
-          <div className="pro_text">
+
+          <div className="pro_text item_two" style={{}}>
             <h1>Milk Chocolate</h1>
             <strong>PRODUCT WITH A PERSONAL TOUCH FOR ANY OCCASION</strong>
             <p>
@@ -60,19 +61,19 @@ const Chocolate = () => {
               dictumst. Suspendisse commodo erat scelerisque mi interdum
               malesuada.
             </p>
-            <div className="Nut_shop">
+            <div className="choco_shop">
               <button>Shop Now</button>
             </div>
           </div>
         </div>
 
         <div
-          className="pro_section"
+          className="pro_section "
           style={{
             backgroundColor: "#6d2077",
           }}
         >
-          <div className="pro_text">
+          <div className="pro_text item_three ">
             <h1>Dark Chocolate</h1>
             <strong>PRODUCT WITH A PERSONAL TOUCH FOR ANY OCCASION</strong>
             <p>
@@ -83,17 +84,18 @@ const Chocolate = () => {
               dictumst. Suspendisse commodo erat scelerisque mi interdum
               malesuada.
             </p>
-            <div className="Nut_shop">
+            <div className="choco_shop">
               <button>Shop Now</button>
             </div>
           </div>
           <div
-            className="pro_img"
+            className="pro_img item_four"
             style={{
               backgroundColor: "white",
+              
             }}
           >
-            <img src= {require("../../img/Dark_choco.png")} alt="" />
+            <img src={require("../../img/Dark_choco.png")} alt="" />
           </div>
         </div>
 
@@ -104,14 +106,14 @@ const Chocolate = () => {
           }}
         >
           <div
-            className="pro_img"
+            className="pro_img item_five"
             style={{
               backgroundColor: "white",
             }}
           >
             <img src={require("../../img/Semi_choco.png")} alt="" />
           </div>
-          <div className="pro_text">
+          <div className="pro_text item_six">
             <h1>Semi Sweet</h1>
             <strong>PRODUCT WITH A PERSONAL TOUCH FOR ANY OCCASION</strong>
             <p>
@@ -122,7 +124,7 @@ const Chocolate = () => {
               dictumst. Suspendisse commodo erat scelerisque mi interdum
               malesuada.
             </p>
-            <div className="Nut_shop">
+            <div className="choco_shop">
               <button>Shop Now</button>
             </div>
           </div>
@@ -135,7 +137,7 @@ const Chocolate = () => {
           }}
         >
           <div
-            className="pro_text"
+            className="pro_text item_seven"
             style={{
               backgroundColor: "#007398",
             }}
@@ -150,12 +152,12 @@ const Chocolate = () => {
               dictumst. Suspendisse commodo erat scelerisque mi interdum
               malesuada.
             </p>
-            <div className="Nut_shop">
+            <div className="choco_shop">
               <button>Shop Now</button>
             </div>
           </div>
           <div
-            className="pro_img"
+            className="pro_img itme_eight"
             style={{
               backgroundColor: "white",
             }}
@@ -171,14 +173,14 @@ const Chocolate = () => {
           }}
         >
           <div
-            className="pro_img"
+            className="pro_img item_nine"
             style={{
               backgroundColor: "white",
             }}
           >
             <img src={require("../../img/Ruby_choco.png")} alt="" />
           </div>
-          <div className="pro_text">
+          <div className="pro_text item_ten ">
             <h1>Ruby Chocolate</h1>
             <strong>PRODUCT WITH A PERSONAL TOUCH FOR ANY OCCASION</strong>
             <p>
@@ -189,7 +191,7 @@ const Chocolate = () => {
               dictumst. Suspendisse commodo erat scelerisque mi interdum
               malesuada.
             </p>
-            <div className="Nut_shop">
+            <div className="choco_shop">
               <button>Shop Now</button>
             </div>
           </div>

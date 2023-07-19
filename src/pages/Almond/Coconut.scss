@@ -5,7 +5,8 @@
   .coco_intro {
     width: 100%;
     height: auto;
-    background-color: #009639;
+    background-color: #159a56;
+
     .coco_intro_data {
       padding: 60px 100px;
       width: 100%;
@@ -27,6 +28,12 @@
       }
       p {
         color: white;
+        text-align: center;
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      .coco_intro_data {
+        padding: 50px;
         text-align: center;
       }
     }
@@ -72,6 +79,17 @@
         text-transform: uppercase;
       }
     }
+    @media only screen and (max-width: 992px) {
+      .coco_be_in {
+        grid-template-columns: 1fr;
+      }
+      .coco_be {
+        padding: 50px !important;
+      }
+      .coco_icon {
+        padding: 5px !important;
+      }
+    }
     .coco_img {
       img {
         width: 100%;
@@ -96,6 +114,13 @@
         font-size: 20px;
         font-weight: 300;
       }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .coco_info {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 50px !important;
     }
   }
   .coco {

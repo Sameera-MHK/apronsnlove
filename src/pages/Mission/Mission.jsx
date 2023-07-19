@@ -6,7 +6,8 @@ import "./Mission.scss";
 
 const Mission = () => {
   return (
-    <div className="mission">
+    <div className="max-width">
+       <div className="mission">
       <div className="mission_banner">
         <div className="video">
           <video className="videoTag" autoPlay loop muted>
@@ -42,7 +43,7 @@ const Mission = () => {
       </div>
 
       <div className="time_line">
-        <h1>Over 20 years and continuing....</h1>
+        <h1>Over 20 years and conting....</h1>
         <div className="time_line_info">
           <div className="years">
             <h1>1992</h1>
@@ -132,6 +133,8 @@ const Mission = () => {
 
       <Newsletter />
     </div>
+    </div>
+   
   );
 };
 

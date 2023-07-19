@@ -3,7 +3,8 @@ import "./PrivacyPolicy.scss";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="privacy">
+    <div className="max-width">
+      <div className="privacy">
       <h1>Privacy policy</h1>
       <p>
         At www.apronsnlove.com, we value the privacy of our users and are
@@ -182,6 +183,8 @@ const PrivacyPolicy = () => {
         </div>
       </section>
     </div>
+    </div>
+    
   );
 };
 

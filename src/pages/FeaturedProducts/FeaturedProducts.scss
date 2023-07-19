@@ -1,5 +1,7 @@
 .featuredProducts {
-  padding: 60px 0px;
+  padding: 50px;
+  width: auto;
+  object-fit: contain;
   .heading {
     width: 100%;
     height: auto;
@@ -18,8 +20,21 @@
     }
   }
   .bottom {
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
-    gap: 50px;
+    grid-gap: 2rem;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 992px) {
+    .bottom {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .featuredProducts {
+    padding: 20px !important;
   }
 }
